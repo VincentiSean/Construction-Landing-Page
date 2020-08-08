@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Basic landing page for a construction company. Design by Matthew Hogeboom. Design found here -> www.behance.net/gallery/101561589/FT-Construction-Landing-Page/moodboard" />
+        <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+
+        <title>FT Construction</title>
+    </head>
+    <body>
+        <header>
+            <div id="company-header">
+                <div id="logo">
+                    <h2>FT</h2>
+                </div>
+                <div id="company-motto">
+                    <h3>Construction</h3>
+                    <h4>Design Develop Create</h4>
+                </div>
+            </div>
+            <button id="hambrgr-btn" onclick="toggleNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-align-justified" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                  </svg>
+            </button>
+            <nav id="mobile-nav">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="large-nav">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul> 
+            </nav>
+            <div id="phone-div">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z"/>
+                    <rect x="7" y="4" width="10" height="16" rx="1" />
+                    <line x1="11" y1="5" x2="13" y2="5" />
+                    <line x1="12" y1="17" x2="12" y2="17.01" />
+                  </svg>
+                  <div id="phone-info-div">
+                      <h3>Call Us Now</h3>
+                      <h4>(555) 555-9340</h4>
+                  </div>
+            </div>
+        </header>
+        <section id="hero-section">
+            <h1>Custom Builders</h1>
+            <h3>Windows, Roofing, Siding, Bathrooms, Kitchens</h3>
+            <button id="find-out-lrg-btn">Find Out More</button>
+        </section>
+        <section id="small-about-section">
+            <div class="small-header">
+                <h1 class="section-title">Whatever your project, we can handle it</h1>
+                <h4 class="tagline-h4">Windows, Roofing, Siding, Bathrooms, Kitchens...</h4>
+                <hr class="small-blue">
+            </div>
+            <div id="work-tiles-div">
+                <div class="work-tile">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brush" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <path d="M3 21v-4a4 4 0 1 1 4 4h-4" />
+                        <path d="M21 3a16 16 0 0 0 -12.8 10.2" />
+                        <path d="M21 3a16 16 0 0 1 -10.2 12.8" />
+                        <path d="M10.6 9a9 9 0 0 1 4.4 4.4" />
+                    </svg>
+                    <h2>Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit nisi omnis neque maxime autem
+                    </p>
+                    <button class="find-out-btn">Find Out More</button>
+                </div>
+                <div class="work-tile">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tool" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <path d="M7 10h3v-3l-3.5 -3.5a6 6 0 0 1 8 8l6 6a2 2 0 0 1 -3 3l-6-6a6 6 0 0 1 -8 -8l3.5 3.5" />
+                    </svg>
+                    <h2>Construction</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit nisi omnis neque maxime autem
+                    </p>
+                    <button class="find-out-btn">Find Out More</button>
+                </div>
+                <div class="work-tile">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-paint" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z"/>
+                        <rect x="5" y="3" width="14" height="6" rx="2" />
+                        <path d="M19 6h1a2 2 0 0 1 2 2a5 5 0 0 1 -5 5l-5 0v2" />
+                        <rect x="10" y="15" width="4" height="6" rx="1" />
+                    </svg>
+                    <h2>Renovate</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit nisi omnis neque maxime autem
+                    </p>
+                    <button class="find-out-btn">Find Out More</button>
+                </div>
+            </div>
+        </section>
+        <section class="blue-bkg" id="experience-section">
+            <div id="exp-img-div">
+                <img id="construction-img" src="./imgs/constructionWorkers.jpg" alt="Construction workers wokring"/>
+                <img class="hidden-img-mobile" src="./imgs/houseConstruction.jpg" alt="Half built house"/>
+                <img class="hidden-img-mobile" src="./imgs/drawingPlans.jpg" alt="blueprints and pencil"/>
+            </div>
+            <div class="section-content">
+                <h2 class="section-title">We have over 40 years of experience</h2>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ea nisi nostrud labore laboris occaecat cillum aute labore culpa. Nisi qui ad consequat exercitation in id cillum. Proident anim incididunt eu esse laborum cillum officia excepteur eiusmod commodo excepteur magna. Officia officia est labore labore eu.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ullamco non nisi consequat est qui non ad. Irure voluptate nisi exercitation ad anim elit aliqua laboris excepteur eu voluptate officia commodo. Officia et cillum quis duis magna minim culpa ex cupidatat. Incididunt culpa sunt aliqua et excepteur qui. Ad sit pariatur duis enim. Qui id aliquip aute non qui anim. Pariatur pariatur eiusmod laborum proident pariatur consequat nulla irure veniam laborum.
+                </p>
+                <button class="find-out-btn">Find Out More</button>
+            </div>
+        </section>
+        <section class="whitebkg-section" id="dreams-section">
+            <div class="section-content">
+                <h2 class="section-title">Bringing your projects and dreams to life</h2>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ea nisi nostrud labore laboris occaecat cillum aute labore culpa. Nisi qui ad consequat exercitation in id cillum. Proident anim incididunt eu esse laborum cillum officia excepteur eiusmod commodo excepteur magna. Officia officia est labore labore eu.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ullamco non nisi consequat est qui non ad. Irure voluptate nisi exercitation ad anim elit aliqua laboris excepteur eu voluptate officia commodo. Officia et cillum quis duis magna minim culpa ex cupidatat. Incididunt culpa sunt aliqua et excepteur qui. Ad sit pariatur duis enim. Qui id aliquip aute non qui anim. Pariatur pariatur eiusmod laborum proident pariatur consequat nulla irure veniam laborum.
+                </p>
+                <button class="find-out-btn">Find Out More</button>
+            </div>
+            <img src="./imgs/constructionWorker.jpg" alt="Construction worker working" />
+        </section>
+        <section class="whitebkg-section" id="handle-section">
+            <img src="./imgs/constructionDigger.jpg" alt="Construction vehicles" />
+            <div class="section-content">
+                <h2 class="section-title">Whatever your project, we can handle it</h2>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ea nisi nostrud labore laboris occaecat cillum aute labore culpa. Nisi qui ad consequat exercitation in id cillum. Proident anim incididunt eu esse laborum cillum officia excepteur eiusmod commodo excepteur magna. Officia officia est labore labore eu.
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Ullamco non nisi consequat est qui non ad. Irure voluptate nisi exercitation ad anim elit aliqua laboris excepteur eu voluptate officia commodo. Officia et cillum quis duis magna minim culpa ex cupidatat. Incididunt culpa sunt aliqua et excepteur qui. Ad sit pariatur duis enim. Qui id aliquip aute non qui anim. Pariatur pariatur eiusmod laborum proident pariatur consequat nulla irure veniam laborum.
+                </p>
+                <button class="find-out-btn">Find Out More</button>
+            </div>
+        </section>
+        <section class="blue-bkg" id="past-project-section">
+            <div class="blue-bkg centered-div">
+                <h1 class="section-title">View some of our past projects</h1>
+                <h4 class="tagline-h4">Windows, Roofing, Siding, Bathrooms, Kitchens...</h4>
+                <hr class="small-blue">
+            </div>
+            <div id="project-div">
+                <a href="#"><img src="imgs/yelllowHouse.jpg" alt="A yellow house" /></a>
+                <a href="#"><img src="imgs/whiteHouse.jpg" alt="A white house" /></a>
+                <a href="#"><img src="imgs/longHouse.jpg" alt="A larger white house" /></a>
+                <a href="#"><img src="imgs/greenHouse.jpg" alt="A house painted green" /></a>
+                <a href="#"><img src="imgs/tanHouse.jpg" alt="A tan house" /></a>
+            </div>
+        </section>
+        <section id="partner-section">
+            <div class="centered-div">
+                <h1 class="section-title">Some of our partners</h1>
+                <h4 class="tagline-h4">FT Construction has a solid relationship with our partners</h4>
+                <hr class="small-blue">
+            </div>
+            <div id="partner-div">
+                <a href="#"><img src="./imgs/andersenLogo.png" alt="Andersen logo" /></a>
+                <a href="#"><img src="./imgs/makitaLogo.png" alt="Makita logo" /></a>
+                <a href="#"><img src="./imgs/homedepotLogo.png" alt="Home Depot logo" /></a>
+                <a href="#"><img src="./imgs/tracyLogo.png" alt="City of Tracy logo" /></a>
+                <a href="#"><img src="./imgs/costcoLogo.png" alt="Costco logo" /></a>
+            </div>
+        </section>
+        <footer>
+            <div id="blue-quote-div">
+                <div id="quote-content">
+                    <h3>Build your dream project with us</h3>
+                    <h6>Contact us today for a free quote on your project</h6>
+                </div>
+                <button id="quote-btn">Get a free quote</button>
+            </div>
+            <div id="footer-content">
+                <div id="footer-company-div">
+                    <div id="bottom-logo-div">
+                        <div id="logo">
+                            <h2>FT</h2>
+                        </div>
+                        <div id="company-motto">
+                            <h3>Construction</h3>
+                            <h4>Design Develop Create</h4>
+                        </div>
+                    </div>
+                    <p>
+                        Sunt ex eu commodo elit elit aliqua nulla esse consequat ullamco fugiat deserunt.
+                    </p>
+                </div>
+                <div class="footer-links-div">
+                    <h4 class="footer-titles">Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-div">
+                    <h4 class="footer-titles">Services</h4>
+                    <ul>
+                        <li><a href="#">Home Construction</a></li>
+                        <li><a href="#">Commercial</a></li>
+                        <li><a href="#">Roofing</a></li>
+                        <li><a href="#">Kitchen / Bathrooms</a></li>
+                        <li><a href="#">Repair / Maintenance</a></li>
+                    </ul>
+                </div>
+                <div id="footer-buttons-div">
+                    <h4 class="footer-titles">Contact Information</h4>
+                    <ul>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <line x1="10" y1="14" x2="21" y2="3" />
+                                <path d="M21 3L14.5 21a.55 .55 0 0 1 -1 0L10 14L3 10.5a.55 .55 0 0 1 0 -1L21 3" />
+                            </svg>
+                            info@ftconstruction.com
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                            </svg>
+                            (555) 361-0738
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-mobile" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <rect x="7" y="4" width="10" height="16" rx="1" />
+                                <line x1="11" y1="5" x2="13" y2="5" />
+                                <line x1="12" y1="17" x2="12" y2="17.01" />
+                            </svg>
+                            (555) 428-9582
+                        </a></li>
+                        <li><a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z"/>
+                                <circle cx="12" cy="11" r="3" />
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+                            </svg>
+                            211 West Ave #25, Weston, NJ 09443
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="js/toggleNav.js"></script>
+    </body>
+</hmtl>
