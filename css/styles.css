@@ -38,7 +38,7 @@ nav {
     float: left;
 }
 
-#logo {
+.logo {
     background-color: #129ae6;
     box-sizing: border-box;
     color: #fff;
@@ -46,18 +46,18 @@ nav {
     padding: 5px;
 }
 
-#logo h2 {
+.logo h2 {
     font-size: 18px;
     font-weight: 900;
 }
 
-#company-motto h3 {
+.company-motto h3 {
     font-size: 16px;
     font-weight: 700;
     margin: 10px 0 0 5px;
 }
 
-#company-motto h4 {
+.company-motto h4 {
     color: #5a5a5a;
     font-size: 10px;
     font-weight: 300;
@@ -423,3 +423,327 @@ footer svg {
 .blue-bkg {
     background-color: #f4f8fb;
 }
+
+@media (min-width: 550px) {
+    .find-out-btn {
+        width: 200px;
+    }
+}
+
+@media (min-width: 600px) {
+    .work-tile {
+        width: 300px; 
+    }
+}
+
+@media (min-width: 750px) {
+
+    #hero-section {
+        height: calc(85vh - 50px);
+    }
+
+    #hero-section::before {
+        /* content: ''; 
+        /* filter: contrast(92%); */
+        height: 85vh;
+        /* margin: auto;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0; */
+        width: 100vw;
+        /* z-index: -1; */
+            
+        background: #fff url('../imgs/heroHouse.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #small-about-section {
+        /* margin-top: -50px; */
+    }
+
+    #work-tiles-div {
+        flex-direction: row;
+    }
+
+    .work-tile {
+        margin-left: auto;
+        margin-right: auto;
+        width: 28%;
+    }
+    
+    .work-tile svg {
+        stroke-width: 1.5px;
+    }
+    
+    .work-tile .find-out-btn {
+        padding: 10px;
+        width: 125px;
+    }
+
+    #experience-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        height: 400px;
+        padding: 50px 0;
+    }
+
+    #exp-img-div {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        height: 100%;
+        margin-left: auto;
+        width: 45%;
+    }
+
+    #construction-img {
+        grid-column: 1/1;
+        grid-row: 1/3;
+
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    #built-house-img {
+        grid-column: 2/2;
+        grid-row: 1/1;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    #blueprints-img {
+        grid-column: 2/2;
+        grid-row: 2/2;
+
+        height: 100%;
+        width: 100%;
+    }
+
+    .hidden-img-mobile {
+        display: block;
+    }
+
+    .section-content {
+        height: 100%;
+        margin: 0 auto;
+        width: 45%;
+    }
+
+    .section-title {
+        font-size: 32px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .section-content p {
+        font-size: 14px;
+    }
+
+    .section-content .find-out-btn {
+        align-self: start;
+        margin-top: 0;
+        padding: 10px;
+        width: 125px;
+    }
+
+    #dreams-section {
+        flex-direction: row;
+    }
+
+    .whitebkg-section {
+        height: 350px;
+        padding: 50px 0;
+    }
+
+    .whitebkg-section img {
+        height: 100%;
+        object-fit: cover;
+        width: 50%;
+    }
+
+    #broken-section {
+        display: inline-block;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 45%;
+    }
+
+    #past-project-section {
+        height: auto;
+    }
+
+    #project-div {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        height: 300px;
+        margin: 25px auto;
+        padding-bottom: 50px;
+        width: 90%; 
+    }
+
+    #yellow-house {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    #yellow-house img {
+        height: 100%;
+    }
+
+    #partner-div {
+        flex-direction: row;
+    }
+    
+    #partner-div a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 15%;
+    }
+    
+    #partner-div img {
+        height: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .non-left-text {
+        text-align: center;
+    }
+
+    footer {
+        background-color: #fff;
+    }
+    
+    #blue-quote-div {
+        flex-direction: row;
+        height: 100px;
+    }
+    
+    #quote-content {
+        width: 55%;
+    }
+    
+    #quote-content h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    
+    #quote-content h6 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    #blue-quote-div button {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 25px;
+    }
+
+    #footer-content {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 50px 0;
+    }
+    
+    #footer-company-div {
+        display: block;
+        width: 20%;
+    }
+
+    #bottom-logo-div {
+        display: flex;
+    }
+
+    #bottom-logo-div .logo {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #bottom-logo-div .logo h2 {
+        font-size: 15px;
+    }
+
+    #bottom-logo-div .company-motto h3 {
+        font-size: 14px;
+        margin: 0 0 0 5px;
+    }
+
+    #bottom-logo-div .company-motto h4 {
+        font-size: 8px;
+        margin: 0 0 0 5;
+    }
+
+    #footer-company-div p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .footer-links-div {
+        display: block;
+        width: 20%;
+    }
+
+    .footer-links-div a {
+        color: #5a5a5a;
+        font-size: 11px;
+        font-weight: 500;
+    }
+
+    .footer-titles {
+        color: #154b6d;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    #footer-buttons-div {
+        height: auto;
+        width: 20%;
+    }
+    
+    #footer-buttons-div ul {
+        height: auto;
+        padding-top: 5px;
+    }
+    
+    #footer-buttons-div ul li {
+        display: block;
+        margin: 0;
+        height: auto;
+    }
+    
+    #footer-buttons-div ul li a {
+        color: #5a5a5a;
+        font-size: 11px;
+        font-weight: 500;
+    }
+    
+    footer svg {
+        height: 15px;
+        width: 15px;
+        stroke: #129ae6;
+        vertical-align: text-bottom;
+    }
+}
+
+/* fix logo margins */
+/* change btn text size */
