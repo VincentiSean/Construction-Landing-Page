@@ -1,4 +1,5 @@
 * {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +10,7 @@ body {
 
 a {
     color: inherit;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -17,9 +19,13 @@ ul {
 }
 
 header {
-    background: #ece9e6; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #ece9e6, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #ece9e6, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, 
+        rgba(255,255,255,1) 0%, 
+        rgba(255,255,255,1) 40%, 
+        rgba(255,255,255,1) 49%, 
+        rgba(224,224,224,1) 100%);
+    border-bottom: 1.5px solid #fff;
     height: 50px;
     position: relative;
 }
@@ -34,6 +40,8 @@ nav {
     align-items: center;
     justify-content: center;
 
+    height: 100%;
+    margin: 0 10px;
     position: relative;
     float: left;
 }
@@ -42,7 +50,7 @@ nav {
     background-color: #129ae6;
     box-sizing: border-box;
     color: #fff;
-    margin: 10px 0 0 10px;
+    margin: 0 0 0 10px;
     padding: 5px;
 }
 
@@ -54,7 +62,7 @@ nav {
 .company-motto h3 {
     font-size: 16px;
     font-weight: 700;
-    margin: 10px 0 0 5px;
+    margin: 0 0 0 5px;
 }
 
 .company-motto h4 {
@@ -77,16 +85,67 @@ nav {
 }
 
 #mobile-nav {
-    background-color: #fff;
-    padding: 20px;
+    background: transparent;
+    background-color: #129ae6;
+    color: #fff;
+    font-size: 32px;
+    padding: 0px 0px 20px 20px;
     position: absolute;
-    top: 50px;
+    top: 0px;
     right: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+}
+
+@keyframes xBtn {
+    0% { transform: translate(0, 45px); }
+    50% { transform: translate(0, 0px); }
+    75% { transform: scale(1.2, 1.2); }
+    100% { transform: scale(1, 1); }
+}
+
+#close-div {
+    cursor: pointer;
+    position: absolute;
+    bottom: 45px;
+    left: 35px;
+    animation-name: xBtn;
+    animation-duration: 2s;
+}
+
+#close-div svg {
+    height: 54px;
+    width: 54px;
+    stroke: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+#close-div:hover svg {
+    transform: scale(1.2, 1.2);
+}
+
+#mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 #mobile-nav ul li {
-    font-size: 16px;
-    margin-top: 10px;
+    margin-top: 0px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 50%;
+}
+
+#mobile-nav ul li a {
+    transition: 0.3s ease-in-out;
+}
+
+#mobile-nav ul li a:hover {
+    letter-spacing: 1.5px;
 }
 
 .icon-tabler-align-justified {
@@ -106,7 +165,7 @@ nav {
     justify-content: center;
     height: calc(100vh - 50px);
     text-align: center;
-    text-shadow: 0 0 8px #2a2a2a;
+    text-shadow: 0 0 5px #000;
     width: 100%;
 }
 
@@ -140,13 +199,23 @@ nav {
 
 #find-out-lrg-btn {
     background-color: #129ae6;
-    border: none;
+    border: 2px solid #129ae6;
     border-radius: 3px;
     color: #fff;
+    cursor: pointer;
     font-size: 14px;
     margin-top: 50px;
     padding: 15px 35px;
     text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+
+#find-out-lrg-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #129ae6;
+    font-weight: 600;
 }
 
 #small-about-section {
@@ -226,14 +295,22 @@ nav {
 
 .find-out-btn {
     background-color: #129ae6;
-    border: none;
+    border: 2px solid #129ae6;
     border-radius: 2px;
     color: #fff;
+    cursor: pointer;
     font-size: 12px;
     margin-top: 20px;
     padding: 15px;
     text-transform: uppercase;
+    transition: 0.3s ease-in-out;
     width: 90%;
+}
+
+.find-out-btn:hover {
+    background-color: #fff;
+    color: #129ae6;
+    font-weight: 600;
 }
 
 #experience-section {
@@ -260,7 +337,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 20px auto;
     width: 80%;
 }
@@ -268,7 +345,8 @@ nav {
 .section-title {
     font-size: 24px;
     font-weight: 800;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
+    max-width: 350px;
     text-align: center;
 }
 
@@ -276,6 +354,7 @@ nav {
     color: #3a3a3a;
     margin-top: 25px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .whitebkg-section {
@@ -313,6 +392,11 @@ nav {
 #project-div img {
     margin-bottom: -5px;
     width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#project-div img:hover {
+    filter: brightness(110%);
 }
 
 #partner-section {
@@ -379,14 +463,23 @@ footer {
 
 #blue-quote-div button {
     background-color: #129ae6;
-    border: none;
     border-radius: 2px;
+    border: 2px solid #129ae6;
     box-sizing: border-box;
+    cursor: pointer;
     color: #fff;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+#blue-quote-div button:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #129ae6;
+    font-weight: 600;
 }
 
 #footer-company-div {
@@ -404,19 +497,25 @@ footer {
 
 #footer-buttons-div ul {
     height: auto;
+    width: 100%;
 }
 
 #footer-buttons-div ul li {
     display: inline-block;
-    margin: 20px auto 20px 10%;
+    margin: 15px auto 15px auto;
     height: auto;
+    width: 24%;
 }
 
 #footer-buttons-div ul li a {
     font-size: 0;
+    width: 100%;
 }
 
 footer svg {
+    align-self: center;
+    display: block;
+    margin: auto;
     stroke: #fff;
 }
 
@@ -438,30 +537,104 @@ footer svg {
 
 @media (min-width: 750px) {
 
+    header {
+        height: 75px;
+        width: 100%;
+    }
+
+    #hambrgr-btn {
+        display: none;
+    }
+
+    #phone-div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        float: right;
+        height: 75px;
+        margin: 8px 30px auto 0;
+        transition: 0.3s ease-in-out;
+        width: 150px;
+    }
+
+    #phone-div:hover {
+        color: #129ae6;
+    }
+
+    #phone-div svg {
+        height: 36px;
+        width: 36px;
+        stroke: #129ae6;
+    }
+
+    #phone-div a {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    #phone-info-div h3 {
+        font-size: 16px;
+    }
+
+    #phone-info-div h4 {
+        font-size: 12px;
+    }
+
+    #large-nav {
+        display: inline-block;
+        height: 100%;
+        margin: 0 0 0 auto;
+        width: auto;
+    }
+
+    #large-nav ul {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+        height: auto;
+        max-width: 600px;
+        position: absolute;
+        top: 35px;
+        right: 180px;
+    }
+
+    #large-nav ul li {
+        margin-left: 5px;
+        text-align: center;
+        width: 70px;
+    }
+
+    #large-nav ul li a {
+        color: #2a2a2a;
+        cursor: pointer;
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 50%;
+        margin-bottom: auto;
+        height: auto;
+        transition: 0.3s ease-in-out;
+        vertical-align: center;
+    }
+
+    #large-nav ul li a:hover {
+        color: #129ae6;
+    }
+
     #hero-section {
-        height: calc(85vh - 50px);
+        height: calc(85vh - 75px);
     }
 
     #hero-section::before {
-        /* content: ''; 
-        /* filter: contrast(92%); */
-        height: 85vh;
-        /* margin: auto;
-        padding: 0;
-        position: absolute;
-        top: 0;
-        left: 0; */
-        width: 100vw;
-        /* z-index: -1; */
-            
         background: #fff url('../imgs/heroHouse.jpg');
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover;
-    }
-
-    #small-about-section {
-        /* margin-top: -50px; */
+        background-size: cover;        
+        height: 85vh;
+        width: 100vw;
     }
 
     #work-tiles-div {
@@ -472,6 +645,7 @@ footer svg {
         margin-left: auto;
         margin-right: auto;
         width: 28%;
+        max-width: 350px;
     }
     
     .work-tile svg {
@@ -519,6 +693,7 @@ footer svg {
         grid-row: 1/1;
 
         height: 100%;
+        object-fit: cover;
         width: 100%;
     }
 
@@ -527,6 +702,7 @@ footer svg {
         grid-row: 2/2;
 
         height: 100%;
+        object-fit: cover;
         width: 100%;
     }
 
@@ -536,18 +712,23 @@ footer svg {
 
     .section-content {
         height: 100%;
-        margin: 0 auto;
+        margin: 0 auto 0 3%;
         width: 45%;
+        max-width: 400px;
+        position: relative;
     }
 
     .section-title {
         font-size: 32px;
-        text-align: left;
         margin: 0;
+        max-width: 100%;
+        text-align: left;
+        width: 100%;
     }
 
     .section-content p {
         font-size: 14px;
+        text-align: left;
     }
 
     .section-content .find-out-btn {
@@ -557,12 +738,32 @@ footer svg {
         width: 125px;
     }
 
+    .right-btn {
+        position: absolute;
+        top: 90%;
+        right: 0;
+    }
+
     #dreams-section {
         flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #dreams-section .section-content {
+        margin: 0 3% auto 0;
+        text-align: right;
+    }
+
+    #dreams-section .section-content p {
+        text-align: right;
+    }
+
+    .right-justify {
+        text-align: right;
     }
 
     .whitebkg-section {
-        height: 350px;
+        height: 400px;
         padding: 50px 0;
     }
 
@@ -572,11 +773,9 @@ footer svg {
         width: 50%;
     }
 
-    #broken-section {
-        display: inline-block;
-        margin-left: 2%;
-        margin-right: 2%;
-        width: 45%;
+    #handle-section {
+        display: flex;
+        flex-direction: row;
     }
 
     #past-project-section {
@@ -590,10 +789,16 @@ footer svg {
         column-gap: 5px;
         row-gap: 5px;
 
-        height: 300px;
+        height: auto;
+        min-height: 300px;
+        max-height: 500px;
         margin: 25px auto;
         padding-bottom: 50px;
         width: 90%; 
+    }
+
+    #project-div img {
+        height: 100%;
     }
 
     #yellow-house {
@@ -688,11 +893,13 @@ footer svg {
     }
 
     #bottom-logo-div .company-motto h4 {
+        color: #5a5a5a;
         font-size: 8px;
         margin: 0 0 0 5;
     }
 
     #footer-company-div p {
+        color: #5a5a5a;
         font-size: 12px;
         margin-top: 10px;
     }
@@ -706,6 +913,13 @@ footer svg {
         color: #5a5a5a;
         font-size: 11px;
         font-weight: 500;
+        transition: 0.3s ease-in-out;
+    }
+
+    .footer-links-div a:hover {
+        color: #2a2a2a;
+        font-size: 12px;
+        font-weight: 700;
     }
 
     .footer-titles {
@@ -715,9 +929,17 @@ footer svg {
         font-weight: 600;
     }
     
+    .footer-links-div:hover .footer-titles {
+        color: #129ae6
+    }
+    
     #footer-buttons-div {
         height: auto;
         width: 20%;
+    }
+
+    #footer-buttons-div:hover .footer-titles {
+        color: #129ae6;
     }
     
     #footer-buttons-div ul {
@@ -727,23 +949,37 @@ footer svg {
     
     #footer-buttons-div ul li {
         display: block;
-        margin: 0;
         height: auto;
+        margin: 0;
+        width: 100%;
     }
     
     #footer-buttons-div ul li a {
         color: #5a5a5a;
         font-size: 11px;
         font-weight: 500;
+        transition: 0.3s ease-in-out;
+    }
+
+    #footer-buttons-div ul li a:hover {
+        color: #2a2a2a;
+        font-size: 12px;
+        font-weight: 700;
     }
     
     footer svg {
+        display: inline-block;
         height: 15px;
         width: 15px;
         stroke: #129ae6;
         vertical-align: text-bottom;
     }
+
+    
 }
 
-/* fix logo margins */
-/* change btn text size */
+@media (min-width: 800px) {
+    .section-content p {
+        font-size: 14.5px;
+    }
+}
